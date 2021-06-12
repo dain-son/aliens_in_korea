@@ -22,7 +22,7 @@ foreigner <-data.table::fread("foreigner.csv",skip=2,encoding="UTF-8")
 foreigner<- subset(foreigner, select=(-c(42:46)))
 foreigner$총합계 <-readr::parse_number(foreigner$'총합계')
 #for3[for3==""]<-0
-for3[is.na(for3)] <- 0
+#for3[is.na(for3)] <- 0
 for3<- gather(foreigner, "체류자격", "인원수", 5:41)
 for3 <- for3 %>% filter(국적!="총계")
 for3$성별[for3$성별 =="총계"]<- "총"
