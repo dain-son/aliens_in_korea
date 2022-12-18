@@ -8,7 +8,7 @@ library(magrittr)
 setwd("C:/Users/user/Downloads/drive-download-20221218T044928Z-001")
 
 #외국인유학생
-inter <-read.csv("foreignstudent.csv")
+inter <-read.csv("foreignstudent.csv",fileEncoding = "euc-kr")
 place <- unite(inter, "체류지", c(체류지.시도, 체류지.시군구), sep=" ")
 place<- subset(place, select=c(순번, 체류지))
 inter<- merge(inter, place, by="순번")
