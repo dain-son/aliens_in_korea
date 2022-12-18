@@ -5,7 +5,7 @@ library(tidyverse)
 library(shiny)
 library(magrittr)
 
-setwd("C:/Users/sea00/Desktop/proj")
+setwd("C:/Users/user/Downloads/drive-download-20221218T044928Z-001")
 
 #외국인유학생
 inter <-read.csv("foreignstudent.csv")
