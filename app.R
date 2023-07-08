@@ -5,7 +5,7 @@ library(tidyverse)
 library(shiny)
 library(magrittr)
 
-setwd("/Users/dainson/Desktop/newstapa")
+setwd("/Users/dainson/Desktop/newstapa/data")
 
 #외국인유학생
 inter <-read.csv("foreignstudent.csv",fileEncoding = "euc-kr")
